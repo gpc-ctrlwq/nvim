@@ -1,0 +1,5 @@
+vim.keymap.set('n', '<leader>b', vim.cmd.Buffers)
+vim.keymap.set('n', '<leader>f', vim.cmd.Files)
+vim.keymap.set('n', '<leader>gf', vim.cmd.GFiles)
+vim.keymap.set('n', '<leader>j', vim.cmd.Jumps)
+vim.keymap.set('n', '<leader>m', vim.cmd.Marks)
