@@ -10,14 +10,16 @@ return require('packer').startup(function(use)
     use { 'junegunn/fzf.vim' }
 
     -- colour scheme
+    use({ 'marko-cerovac/material.nvim', as = 'material' })
+    use({ 'aktersnurra/no-clown-fiesta.nvim', as = 'no-clown-fiesta' })
     use({
-        'marko-cerovac/material.nvim',
-        as = 'material'
+        'mcchrish/zenbones.nvim',
+        as = 'zenbones',
+        requires = { "rktjmp/lush.nvim" }
     })
-    use({
-        'aktersnurra/no-clown-fiesta.nvim',
-        as = 'no-clown-fiesta'
-    })
+    use ({ 'projekt0n/github-nvim-theme' })
+    use ({ 'p00f/alabaster.nvim', as = 'alabaster' })
+
 
     -- lualine, nvim status-line
     use {
@@ -61,4 +63,3 @@ return require('packer').startup(function(use)
 
     use 'tpope/vim-surround'
 end)
-
