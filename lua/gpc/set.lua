@@ -10,7 +10,7 @@ set.undofile = true
 set.updatetime = 50
 vim.g['filetype'] = 'plugin on'
 set.syntax = 'on'
-set.foldmethod = 'indent'
+set.foldmethod = 'manual'
 
 -- appearance
 set.guicursor = 'n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait10-blinkoff10-blinkon10'
