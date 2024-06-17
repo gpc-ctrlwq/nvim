@@ -6,7 +6,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- fzf
-    --use { 'junegunn/fzf', dir = '~/.fzf', run = './install --all' }
+    use { 'junegunn/fzf', dir = '~/.fzf', run = './install --all' }
     use { 'junegunn/fzf.vim' }
 
     -- colour scheme
