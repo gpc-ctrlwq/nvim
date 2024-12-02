@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  alabaster = {
-    loaded = true,
-    path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\alabaster",
-    url = "https://github.com/p00f/alabaster.nvim"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
@@ -99,11 +94,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
-  ["github-nvim-theme"] = {
-    loaded = true,
-    path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim",
@@ -118,11 +108,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["lush.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lush.nvim",
-    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -143,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\no-clown-fiesta",
     url = "https://github.com/aktersnurra/no-clown-fiesta.nvim"
+  },
+  ["nordic.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nordic.nvim",
+    url = "https://github.com/AlexvZyl/nordic.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -175,15 +165,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["obscure.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\obscure.nvim",
+    url = "https://github.com/killitar/obscure.nvim"
+  },
+  ["onenord.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onenord.nvim",
+    url = "https://github.com/rmehri01/onenord.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  undotree = {
-    loaded = true,
-    path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
-    url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
     loaded = true,
@@ -194,11 +189,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",
     url = "https://github.com/tpope/vim-surround"
-  },
-  zenbones = {
-    loaded = true,
-    path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\zenbones",
-    url = "https://github.com/mcchrish/zenbones.nvim"
   }
 }
 

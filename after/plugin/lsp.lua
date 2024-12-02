@@ -1,10 +1,5 @@
 local lsp = require('lsp-zero').preset({})
 
-lsp.ensure_installed({
-	'tsserver',
-	'eslint',
-})
-
 local cmp = require('cmp')
 --local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
@@ -24,3 +19,8 @@ end)
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.setup()
+
+lsp.ensure_installed({
+	'tsserver',
+	'eslint',
+})
