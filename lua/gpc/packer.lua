@@ -49,6 +49,14 @@ return require('packer').startup(function(use)
 
     use 'tpope/vim-surround'
 
+    use {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function()
+            require("nvim-autopairs").setup {}
+        end
+    }
+
     -- colourschemes
     use 'marko-cerovac/material.nvim'
     use 'aktersnurra/no-clown-fiesta.nvim'
