@@ -188,11 +188,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["vim-fugitive"] = {
-    loaded = true,
-    path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
-    url = "https://github.com/tpope/vim-fugitive"
-  },
   ["vim-surround"] = {
     loaded = true,
     path = "C:\\Users\\genep\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",

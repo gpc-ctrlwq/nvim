@@ -32,14 +32,3 @@ set('n', '<leader>e', vim.cmd.Ex)
 set('n', '<leader>y', '"+y')
 set('v', '<leader>y', '"+y')
 
--- tab navigation
-set('n', '<leader>1', '1gt')
-set('n', '<leader>2', '2gt')
-set('n', '<leader>3', '3gt')
-set('n', '<leader>4', '4gt')
-set('n', '<leader>5', '5gt')
-set('n', '<leader>6', '6gt')
-set('n', '<leader>7', '7gt')
-set('n', '<leader>8', '8gt')
-set('n', '<leader>9', '9gt')
-
