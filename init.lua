@@ -1,1 +1,2 @@
-require("gpc")
+require('config')
+require('config.lazy')
