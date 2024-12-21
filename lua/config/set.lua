@@ -18,6 +18,7 @@ set.guicursor = 'n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait10-blin
 set.termguicolors = true
 set.number = true
 set.relativenumber = true
+set.signcolumn = 'yes'
 
 -- netrw
 vim.g['netrw_liststyle'] = '3'
@@ -35,7 +36,7 @@ set.showmode = true
 set.incsearch = true
 set.ignorecase = true
 set.smartcase = true
-set.hlsearch = false
+set.hlsearch = true
 
 -- indenting
 set.expandtab = true
