@@ -19,7 +19,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
 return {
     'williamboman/mason-lspconfig.nvim',
     dependencies = {
-        'neovim/nvim-lspconfig',
         'williamboman/mason.nvim',
         'Saghen/blink.cmp',
     },
