@@ -20,5 +20,6 @@ require('lazy').setup({
     spec = {
         { import = 'config.plugins' },
         'tpope/vim-surround',
+        'nvim-tree/nvim-web-devicons',
     },
 })
