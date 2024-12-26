@@ -33,3 +33,5 @@ set('n', '\'d', '\'D')
 set('n', '<leader>y', '"+y')
 set('v', '<leader>y', '"+y')
 
+-- clear search highlight on esc press
+set('n', '<esc>', '<esc>:nohl<cr>', { noremap = true })
