@@ -9,7 +9,6 @@ return {
                 vim.keymap.set('n', '<leader>b', require('fzf-lua').buffers);
                 vim.keymap.set('n', '<leader>f', require('fzf-lua').git_files);
                 vim.keymap.set('n', '<leader>F', require('fzf-lua').files);
-                vim.keymap.set('n', '<leader>c', require('fzf-lua').quickfix);
             })
         end
     },
