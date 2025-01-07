@@ -13,8 +13,12 @@ set('n', '<C-j>', '<C-w>j')
 set('n', '<C-k>', '<C-w>k')
 set('n', '<C-l>', '<C-w>l')
 -- move to split after creating it
-set('n', '<C-w>s', '<C-w>s <C-w>j')
-set('n', '<C-w>v', '<C-w>v <C-w>l')
+set('n', '<C-w>s', '<C-w>s<C-w>j')
+set('n', '<C-w>v', '<C-w>v<C-w>l')
+
+-- buffer nav
+set('n', '<leader>n', ':bnext<cr>')
+set('n', '<leader>p', ':bprevious<cr>')
 
 -- my file marks
 set('n', 'ma', 'mA')
