@@ -21,6 +21,7 @@ return {
     config = function()
         local cmp = require("cmp")
         local luasnip = require("luasnip")
+        local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
         require('luasnip.loaders.from_vscode').lazy_load();
 
@@ -37,7 +38,9 @@ return {
                 { name = "path" },
             }),
             mapping = {
-                ['<tab>'] = cmp.mapping.confirm({ select = true })
+                ['<tab>'] = cmp.mapping.confirm({ select = true }),
+                ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+                ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
             },
         });
     end
