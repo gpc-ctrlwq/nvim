@@ -30,8 +30,7 @@ set('n', '\'b', '\'B')
 set('n', '\'c', '\'C')
 set('n', '\'d', '\'D')
 
--- replaced by Oil.nvim plugin
---set('n', '<leader>e', vim.cmd.Ex)
+set('n', '<leader>e', vim.cmd.Ex)
 
 -- yank to system clipboard
 set('n', '<leader>y', '"+y')
