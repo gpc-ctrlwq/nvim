@@ -1,7 +1,6 @@
 local set = vim.keymap.set
 
 vim.g.mapleader = ' '
-set('n', ':bw', '<nop>')
 
 -- treat long lines as line breaks
 set('n', 'j', 'gj')
