@@ -1,6 +1,6 @@
 return {
     'hrsh7th/nvim-cmp',
-    event = 'InsertEnter',
+    event = { 'InsertEnter', 'CmdlineEnter' },
     dependencies = {
         -- completion sources
         'hrsh7th/cmp-nvim-lsp',
@@ -35,6 +35,7 @@ return {
                 { name = "nvim_lsp" },
                 { name = "luasnip" },
                 { name = "buffer" },
+                { name = "cmdline" },
                 { name = "path" },
             }),
             mapping = {
@@ -42,6 +43,14 @@ return {
                 ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
                 ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
             },
+        });
+
+        cmp.setup.cmdline(':', {
+            mapping = cmp.mapping.preset.cmdline(),
+            sources = cmp.config.sources({
+                { name = 'path' },
+                { name = 'cmdline' },
+            }),
         });
     end
 }
