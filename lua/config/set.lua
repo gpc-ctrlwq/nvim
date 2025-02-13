@@ -47,3 +47,7 @@ set.autoindent = true
 set.smartindent = true
 set.smarttab = true
 set.backspace = '2'
+
+-- formatting
+-- remove auto insert of comment leader
+vim.api.nvim_create_autocmd("BufEnter", { callback = function() vim.opt.formatoptions:remove({ "o", "r" }) end })
