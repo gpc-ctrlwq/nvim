@@ -6,11 +6,17 @@ set.wrap = true
 set.swapfile = false
 set.backup = false
 set.undofile = true
+set.undolevels = 10000
 --set.undodir = os.getenv('$home') .. './vim/undodir'
-set.updatetime = 50
 vim.g['filetype'] = 'plugin on'
 set.syntax = 'on'
-set.foldmethod = 'manual'
+
+-- folding
+set.foldenable = true
+set.foldlevel = 99 -- start all folds open
+set.foldmethod = 'expr' -- use treesitter for folding
+set.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+
 
 -- appearance
 set.guicursor = 'n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait10-blinkoff10-blinkon10'
