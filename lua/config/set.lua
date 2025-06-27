@@ -17,7 +17,6 @@ set.foldlevel = 99 -- start all folds open
 set.foldmethod = 'expr' -- use treesitter for folding
 set.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 
-
 -- appearance
 set.guicursor = 'n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait10-blinkoff10-blinkon10'
 --set.guicursor = ''
@@ -57,3 +56,6 @@ set.backspace = '2'
 -- formatting
 -- remove auto insert of comment leader
 vim.api.nvim_create_autocmd("BufEnter", { callback = function() vim.opt.formatoptions:remove({ "o", "r" }) end })
+
+-- diagnostic
+vim.diagnostic.config({ virtual_text = true })
