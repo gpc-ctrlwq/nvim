@@ -33,3 +33,6 @@ set('v', '<leader>y', '"+y')
 
 -- clear search highlight on esc press
 set('n', '<esc>', '<esc>:nohl<cr>', { noremap = true })
+
+-- goto def in new split
+set('n', '<leader>s', '<C-w>v<C-w>l:lua vim.lsp.buf.definition()<cr>')
