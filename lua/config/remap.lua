@@ -34,5 +34,34 @@ set('v', '<leader>y', '"+y')
 -- clear search highlight on esc press
 set('n', '<esc>', '<esc>:nohl<cr>', { noremap = true })
 
--- goto def in new split
-set('n', '<leader>s', '<C-w>v<C-w>l:lua vim.lsp.buf.definition()<cr>')
+-- grep
+set('n', '<leader>g', ':sil lgr -i ')
+
+-- make
+set('n', '<leader>m', ':sil make ')
+
+local function toggleQuickfix()
+    local windows = vim.fn.getwininfo()
+    for _, win in pairs(windows) do
+        if win["quickfix"] == 1 then
+            vim.cmd.cclose()
+            return
+        end
+    end
+    vim.cmd.copen()
+end
+
+local function toggleLocation()
+    local windows = vim.fn.getwininfo()
+    for _, win in pairs(windows) do
+        if win["loclist"] == 1 then
+            vim.cmd.lclose()
+            return
+        end
+    end
+    vim.cmd('silent! lopen') -- lopen errors if loclist is empty
+end
+
+-- toggle lists
+set('n', '<leader>q', toggleQuickfix, { desc = "Toggle quickfix window" })
+set('n', '<leader>l', toggleLocation, { desc = "Toggle location list window" })
