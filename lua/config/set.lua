@@ -59,3 +59,6 @@ vim.api.nvim_create_autocmd("BufEnter", { callback = function() vim.opt.formatop
 
 -- diagnostic
 vim.diagnostic.config({ virtual_text = true })
+
+-- grep
+set.grepprg = "rg --vimgrep"
