@@ -3,4 +3,7 @@ return {
     dependencies = {
         'williamboman/mason-lspconfig.nvim',
     },
+    opts = {
+        inlay_hints = { enabled = true },
+    },
 }
