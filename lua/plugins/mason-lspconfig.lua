@@ -17,37 +17,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 return {
-    'williamboman/mason-lspconfig.nvim',
+    'mason-org/mason-lspconfig.nvim',
     dependencies = {
-        'williamboman/mason.nvim',
+        {'mason-org/mason.nvim', opts = {}},
+        'neovim/nvim-lspconfig',
     },
-    config = function()
-        local capabilities = require('cmp_nvim_lsp').default_capabilities();
-
-        require('mason-lspconfig').setup({
-            ensure_installed = { 'lua_ls', 'zls', 'ts_ls', 'clangd', 'sqlls' },
-
-            handlers = {
-                -- default handler, do not manually set up servers in lspconfig
-                function(server_name)
-                    require("lspconfig")[server_name].setup { capabilities = capabilities }
-                end,
-
-                -- dedicated handlers go here
-                ["lua_ls"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.lua_ls.setup {
-                        settings = {
-                            Lua = {
-                                diagnostics = {
-                                    globals = { "vim" }
-                                }
-                            }
-                        }
-                    }
-                end,
-            }
-
-        })
-    end
+    opts = {
+        ensure_installed = { 'lua_ls', 'zls', 'ts_ls', 'clangd', 'sqlls' },
+    },
 }
