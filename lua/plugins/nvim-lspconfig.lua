@@ -7,5 +7,12 @@ return {
         inlay_hints = { enabled = true },
     },
     config = function ()
+        vim.lsp.config('zls', {
+            settings = {
+                zls = {
+                    enable_argument_placeholders = false,
+                }
+            }
+        })
     end,
 }
