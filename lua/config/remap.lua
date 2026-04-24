@@ -17,13 +17,17 @@ set('n', '<C-w>v', '<C-w>v<C-w>l')
 
 -- my file marks
 set('n', 'ma', 'mA')
-set('n', 'mb', 'mB')
-set('n', 'mc', 'mC')
+set('n', 'ms', 'mS')
 set('n', 'md', 'mD')
+set('n', 'mf', 'mF')
 set('n', '\'a', '`A')
-set('n', '\'b', '`B')
-set('n', '\'c', '`C')
+set('n', '\'s', '`S')
 set('n', '\'d', '`D')
+set('n', '\'f', '`F')
+
+-- centre jumps
+set('n', '<C-o>', '<C-o>zz')
+set('n', '<C-i>', '<C-i>zz')
 
 set('n', '<leader>e', vim.cmd.Ex)
 
