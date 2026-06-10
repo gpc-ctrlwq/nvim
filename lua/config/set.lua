@@ -62,3 +62,6 @@ vim.diagnostic.config({ virtual_text = true })
 
 -- grep
 set.grepprg = "rg --vimgrep"
+
+-- file stuff
+set.path = '.,,,**'
